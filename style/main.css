@@ -1,25 +1,3 @@
-* {
-  box-sizing: border-box; }
-
-body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 15px;
-  padding-top: 80px; }
-
-button {
-  background: none;
-  border: 0;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  overflow: visible;
-  padding: 0;
-  user-select: none;
-  outline: none;
-  cursor: pointer; }
-
 /* Eric Meyer's CSS Reset
    http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -68,6 +46,40 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  padding-top: 80px; }
+
+.button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3); }
+  .button--green {
+    background-color: #61bd4f; }
+    .button--green:hover {
+      background-color: #5aac44; }
+  .button--blue {
+    background-color: #315989; }
+    .button--blue:hover {
+      background-color: #265773; }
+
 .app-header {
   justify-content: space-between;
   align-items: center;
@@ -75,23 +87,35 @@ table {
   width: 100%;
   height: 80px;
   position: fixed;
+  top: 0;
   padding: 0 15px;
   background-color: #0079bf; }
   .app-header img {
     width: 130px; }
   .app-header button:first-child {
     margin-right: 15px; }
-  .app-header button:hover {
-    text-decoration: underline; }
-  .app-header .log-in {
-    padding: 15px;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
-    background-color: #0079bf; }
-  .app-header .sign-up {
-    padding: 15px;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
-    background-color: #61bd4f; }
+
+.home-block {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 60px 30px; }
+  .home-block--reverse {
+    flex-direction: row-reverse; }
+  .home-block__col {
+    padding: 0 15px;
+    width: 50%; }
+    .home-block__col--green-text {
+      color: green; }
+  .home-block__description {
+    text-align: center;
+    line-height: 1.2;
+    font-size: 22px; }
+  .home-block__image {
+    display: block;
+    height: auto;
+    margin: 0 auto; }
+  .home-block--red {
+    background-color: rgba(255, 0, 0, 0.5); }
+  .home-block--green {
+    background-color: rgba(0, 128, 0, 0.5); }
