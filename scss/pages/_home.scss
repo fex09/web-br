@@ -1,0 +1,41 @@
+.home-block {
+    @include flex(center, center);
+    padding: $gutter-4 $gutter-2;
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+
+    &__col {
+        padding: 0 $gutter-1;
+        width: 50%;
+
+        &--green-text {
+            color: green;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        line-height: 1.2;
+        font-size: 22px;
+    }
+
+    &__image {
+        display: block;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    &--red {
+        background-color: rgba(red, 0.5);
+    }
+
+    &--green {
+        background-color: rgba(green, 0.5);
+    }
+}
+
+
+
+

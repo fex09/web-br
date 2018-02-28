@@ -5,6 +5,7 @@ $header-logo-width: 130px;
     width: 100%;
     height: $header-height;
     position: fixed;
+    top: 0;
     padding: 0 $gutter-1;
     background-color: $blue-1;
 
@@ -16,17 +17,5 @@ $header-logo-width: 130px;
         &:first-child {
             margin-right: $gutter-1;
         }
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-    .log-in {
-        @include app-button($blue-2);
-    }
-
-    .sign-up {
-        @include app-button($green-1);
     }
 }

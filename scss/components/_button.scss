@@ -1,9 +1,58 @@
 $button-border-radius: 5px;
 $button-shadow: 0 2px 0 rgba($black, 0.3);
 
-@mixin app-button($bc) {
+@mixin app-button($bc: null, $color: null) {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
     padding: $gutter-1;
     color: $white;border-radius: $button-border-radius;
     box-shadow: $button-shadow;
-    background-color: $bc;
+
+    @if ($bc != null) {
+        background-color: $bc;
+    }
+
+    @if ($color != null) {
+        @extend %button--#{$color};
+    }
+}
+
+%button {
+    @include app-button();
+
+    &--green {
+        background-color: $green-1;
+
+        &:hover {
+            background-color: $green-2;
+        }
+    }
+
+    &--blue {
+        background-color: $blue-2;
+
+        &:hover {
+            background-color: $blue-3;
+        }
+    }
+}
+
+.button {
+    @extend %button;
+
+    &--green {
+        @extend %button--green;
+    }
+
+    &--blue {
+        @extend %button--blue;
+    }
 }
