@@ -1,0 +1,30 @@
+{
+  "name": "web-brainstation",
+  "version": "1.0.0",
+  "description": "Curos de web avanzado de brain station",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcanessa89/web-br.git"
+  },
+  "author": "Rodolfo Canessa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcanessa89/web-br/issues"
+  },
+  "homepage": "https://github.com/rcanessa89/web-br#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-sass": "^3.1.0",
+    "run-sequence": "^2.2.1",
+    "yargs": "^11.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}
