@@ -4,7 +4,13 @@
   "description": "Curos de web avanzado de brain station",
   "main": "index.js",
   "scripts": {
+    "babel": "./node_modules/.bin/babel --presets env --plugins babel-plugin-transform-object-rest-spread ./src/js/app.js -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   },
   "repository": {
     "type": "git",
@@ -17,8 +23,13 @@
   },
   "homepage": "https://github.com/rcanessa89/web-br#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.5.0",
     "gulp-sass": "^3.1.0",
     "run-sequence": "^2.2.1",
