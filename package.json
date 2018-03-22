@@ -1,0 +1,16 @@
+{
+  "name": "semana7enclase",
+  "version": "1.0.0",
+  "description": "Prueba en clase lsproductions",
+  "main": "index.js",
+  "repository": "https://github.com/fex09/web-br.git",
+  "author": "Fenix <fsolisg@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-sass": "^3.1.0",
+    "run-sequence": "^2.2.1"
+  }
+}
